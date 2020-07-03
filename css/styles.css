@@ -114,7 +114,6 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .nav-link.current {
@@ -123,16 +122,17 @@ p {
 
 .contact {
   display: flex;
+  align-items: baseline;
 }
 
 .address-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.address-icon:hover,
+/* .address-icon:hover,
 .address-icon:focus {
   fill: var(--accent-color);
-}
+} */
 .envelope {
   width: 16px;
   height: 11.2px;
@@ -140,6 +140,19 @@ p {
 .smartphone {
   width: 10px;
   height: 15px;
+}
+.mail {
+  display: flex;
+  margin-right: 30px;
+}
+.mail:hover .envelope,
+.mail:focus .envelope,
+.phone:hover .smartphone,
+.phone:focus .smartphone {
+  fill: var(--accent-color);
+}
+.phone {
+  display: flex;
 }
 .contact-link {
   display: block;
@@ -249,6 +262,7 @@ h3 {
 .advantages-list > li,
 .team-list > li {
   width: 270px;
+  margin-top: 94px;
 }
 .advantages-icon {
   display: flex;
